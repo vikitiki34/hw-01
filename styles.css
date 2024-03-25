@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+h1{
+    color: #ffffff;
+}
+h2{
+    color: #ffffff;
+}
+p{
+    color: #ffffff;
+}
+body{
+        background-color: #000000;
+        font-family: "Raleway", sans-serif;  
+    }
+.logo{
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+}
+.graficlogo{
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+nav{
+    margin: auto;
+    width: 460px;
+    height: 100px;
+}
+.topnav{
+    background-color: #000;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.topnav a{
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+.topnav a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.topnav a.icon{
+    display:none;
+}
+.mw-100{
+    max-width: 100%;
+    float: right;
+    padding-left: 550px;
+}
+.advantages_container{
+    display:flex;
+    justify-content: center;
+}
+.advantages{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.advantages_item{
+    width: 30%;
+}
+.footer_container{
+    display:flex;
+    justify-content: center;
+}
+.footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.footer_item{
+    width: 30%;
+}
+.social img{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.social img:hover{
+    background-color: #201c1c;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 760px){
+ .topnav a:not(:first-child) {
+    display: none;
+ }
+ .topnav a.icon{
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: rgb(255, 255, 255);
+ }
+ nav{
+    width: 100%;
+ }
+ .topnav.responsive{
+    position: relative;
+ }
+ .topnav.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+ }
+ .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+ }
+ .advantages_item{
+    width: 45%;
+ }
+ .footer_item{
+    width: 45%;
+ }
+}
+@media screen and (max-width: 420px){
+    .advantages{
+        flex-direction: column;
+    }
+    .advantages_item{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer_item{
+        width: 100%;
+    }
+}
